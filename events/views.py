@@ -44,7 +44,7 @@ def all(request):
 
 """Visualização dos eventos de um determinado dia, recebe a data em formato ano/mes/dia como parametro"""
 
-def day(request, year:init, month:init, day:init):
+def day(request, year:int, month:int, day:int):
     day = datetime(year,month,day)
     events = Event.objects.filter(date='{:%y-%m-d}'.format(day)).order_by('-priority', 'event')
 
