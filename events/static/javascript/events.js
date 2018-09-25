@@ -10,6 +10,6 @@ $(document).ready(function() {
         $('#editInputPriority').prop('value', values[2]);
 
         $('#editEvent').modal('toggle');
-    })
+    })// click()
 
-})
+})// function()
